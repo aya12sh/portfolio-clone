@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <>
+    <main>
         <!-- start header by aya -->
         <header class="po-header">
             <div class="po-header__logo">
@@ -32,7 +32,7 @@
         </header>
         <!-- end header -->
         <!-- start content section -->
-        <section>
+        <section class="po-contact-container">
             <!-- start home section by aya -->
             <section id="home" class="po-home-sec">
                 <div class="po-text-container">
@@ -46,16 +46,13 @@
                 </figure>
             </section>
             <!-- end home section -->
-        </section>
-        <!-- end content section -->
-
             <!--start section 2 by abanoub-->
             <section class="”po-expertise-sec" id="”expertise">
                 <div class="po- expertise-title"><span>my skills</span><h2> my expertise</h2></div>
                 <div class="po-skills-container">
                     <div class="po-skill">
                         <div class="po-skill__card">
-                            <div class=" po-skill__icon"> <i class="fa-regular fa-paperplane"></i></div>
+                            <div class=" po-skill__icon"> <i class="fa-regular fa-paper-plane"></i></div>
                             <div class="po-skill__title"><h3>strategy & direction</h3></div>
                             <div class="po-skill__text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vero cupiditate distinctio</p></div>  
                         </div>
@@ -69,7 +66,7 @@
                     </div>
                     <div class="po-skill">
                         <div class=" po-skill__card">
-                            <div class=" po-skill__icon"><i class="fa-solid fafeather"></i></div> 
+                            <div class=" po-skill__icon"><i class="fa-solid fa-feather"></i></div> 
                             <div class="po-skill__title"><h3> ui & ux design</h3></div>
                             <div class="po-skill__text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim.</p></div>
                         </div>
@@ -84,66 +81,77 @@
                 </div>
             </section>
             <!--end section 2 by abanoub-->
-
             <!--start section 3 by abanoub-->
-                <section class="po-about-sec" id="about-me">
-                    <div class="po-img-containe">
-                        <img src="./assets/imgs/About Me-1.png">
-                    </div>
-                    <div class="po-text-container"><span>about.</span></div>
-                </section>
-            <!--end section 3 by abanoub-->
-
-        <!-- start section 6 by khaled -->
-            <section class="po-contact-sec" id="contact-me">
-                <div class="po-contact-title">
-                    <span>get in touch</span>
-                    <h2>contact me</h2>
-                    <p>Lorem ipsum dolor sit amet.</p> 
+            <section class="po-about-sec" id="about-me">
+                <div class="po-img-container">
+                    <img src="./assets/imgs/About Me-1.png">
                 </div>
-
-                <div class="po-contact-container">
-                    <form action="" class="po-contact-form">
-                        <div class="po-contact__name">
-                            <div class="po-first-name">
-                                <label for="first-name">First name<input id="first-name" name="first-name" type="text" required></label>
-                            </div>
-                            <div class="po-last-name">
-                                <label for="last-name">Last name<input id="last-name" name="last-name" type="text" required></label>
-                            </div>
-                        </div>
-                        <div class="po-email-number">
-                            <div class="po-email">
-                                <label for="po-email">Email<input id="po-email" name="po-email" type="email" required></label>
-                            </div>
-                            <div class="po-number">
-                                <label for="po-number">Phone number<input id="po-number" name="po-number" type="number" required></label>
-                            </div>
-                        </div>
-                        <div class="po-selection">
-                            <p>choose a topic</p>
-                            <select name="selection" id="selection">
-                                <option value="">Select one...</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                        </div>
-                        <div class="po-message">
-                            <p>Message</p>
-                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="po-terms">
-                            <label for="terms">I accept the terms <input type="radio" name="terms" id="terms"></label>
-                        </div>
-                        <div class="po-sub-btn">
-                            <button type="submit">submit</button>
-                        </div>
-                    </form>
+                <div class="po-text-container">
+                    <span>about.</span>
+                    <h2> about me.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore rem iure facilis id omnis. Provident, </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, illo!</p>
                 </div>
             </section>
-        <!-- end section 6 -->
+        <!--end section 3 by abanoub-->
+        
+        <!-- start section 6 by khaled -->
+        <section class="po-contact-sec" id="contact-me">
+            <div class="po-contact-title">
+                <span>get in touch</span>
+                <h2>contact me</h2>
+                <p>Lorem ipsum dolor sit amet.</p> 
+            </div>
+
+            <div class="po-contact-container">
+                <form action="" class="po-contact-form">
+                    <div class="po-contact__name">
+                        <div class="po-first-name">
+                            <label for="first-name">First name<input id="first-name" name="first-name" type="text" required></label>
+                        </div>
+                        <div class="po-last-name">
+                            <label for="last-name">Last name<input id="last-name" name="last-name" type="text" required></label>
+                        </div>
+                    </div>
+                    <div class="po-email-number">
+                        <div class="po-email">
+                            <label for="po-email">Email<input id="po-email" name="po-email" type="email" required></label>
+                        </div>
+                        <div class="po-number">
+                            <label for="po-number">Phone number<input id="po-number" name="po-number" type="number" required></label>
+                        </div>
+                    </div>
+                    <div class="po-selection">
+                        <p>choose a topic</p>
+                        <select name="selection" id="selection">
+                            <option value="">Select one...</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="po-message">
+                        <p>Message</p>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="po-terms">
+                        <label for="terms">I accept the terms <input type="radio" name="terms" id="terms"></label>
+                    </div>
+                    <div class="po-sub-btn">
+                        <button type="submit">submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    <!-- end section 6 -->
+        </section>
+        <!-- end content section -->
+
+            
+
+            
+
 
         <!-- start footer by khaled -->
         <footer>
